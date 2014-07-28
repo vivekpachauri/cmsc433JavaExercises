@@ -1,0 +1,60 @@
+<ACDG> 
+<TOP>  TopTest1 </TOP> 
+<BOTTOM> BottomTest1 </BOTTOM>  
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> AndT1  </NAME> 
+</NODE>
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> XorT1 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> TopTest1 </NAME> 
+     <VERSION> vt1.1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> B1 </NAME> 
+     <VERSION> v0.1 </VERSION> 
+     <VERSION> v0.2 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C1 </NAME> 
+     <VERSION> v1.1 </VERSION> 
+     <VERSION> v2.1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> BottomTest1 </NAME> 
+     <VERSION> vb1.2 </VERSION> 
+</NODE> 
+<EDGE> 
+       <PARENT> TopTest1 </PARENT>
+       <CHILD> AndT1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> AndT1 </PARENT>
+       <CHILD> B1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> AndT1 </PARENT>
+       <CHILD> C1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> B1 </PARENT>
+       <CHILD> XorT1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C1 </PARENT>
+       <CHILD> XorT1</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> XorT1 </PARENT>
+       <CHILD> BottomTest1 </CHILD>
+</EDGE> 
+<CONSTRAINT>  IMPLIES(EQ(version(B1),v0.1),EQ(version(C1),v1.1)) </CONSTRAINT>
+<CONSTRAINT>  LEQ(version(B1),v0.1) </CONSTRAINT>
+</ACDG>

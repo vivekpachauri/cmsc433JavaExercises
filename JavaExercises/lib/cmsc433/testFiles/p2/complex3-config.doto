@@ -1,0 +1,71 @@
+ {
+graph [
+label = "TOP:A\nBOTTOM:OS"
+]
+"A" [label = "A\nComponent\n[v1]"]
+"And_1" [label = "And_1\nRelation:And"]
+"Xor_1" [label = "Xor_1\nRelation:Xor"]
+"And_F" [label = "And_F\nRelation:And"]
+"F" [label = "F\nComponent\n[oo]"]
+"And_2" [label = "And_2\nRelation:And"]
+"OS" [label = "OS\nComponent\n[v4.1]"]
+"Xor_2" [label = "Xor_2\nRelation:Xor"]
+"A" -> "And_1"
+"And_1" -> "Xor_1"
+"Xor_1" -> "And_F"
+"And_F" -> "F"
+"F" -> "And_2"
+"And_2" -> "OS"
+"And_1" -> "Xor_2"
+"Xor_2" -> "And_F"
+}
+
+ {
+graph [
+label = "TOP:A\nBOTTOM:OS"
+]
+"A" [label = "A\nComponent\n[v1]"]
+"And_1" [label = "And_1\nRelation:And"]
+"Xor_1" [label = "Xor_1\nRelation:Xor"]
+"And_B" [label = "And_B\nRelation:And"]
+"B" [label = "B\nComponent\n[ar]"]
+"And_2" [label = "And_2\nRelation:And"]
+"OS" [label = "OS\nComponent\n[v4.1]"]
+"Xor_2" [label = "Xor_2\nRelation:Xor"]
+"A" -> "And_1"
+"And_1" -> "Xor_1"
+"Xor_1" -> "And_B"
+"And_B" -> "B"
+"B" -> "And_2"
+"And_2" -> "OS"
+"And_1" -> "Xor_2"
+"Xor_2" -> "And_B"
+}
+
+ {
+graph [
+label = "TOP:A\nBOTTOM:OS"
+]
+"A" [label = "A\nComponent\n[v1]"]
+"And_1" [label = "And_1\nRelation:And"]
+"Xor_1" [label = "Xor_1\nRelation:Xor"]
+"And_F" [label = "And_F\nRelation:And"]
+"F" [label = "F\nComponent\n[oo]"]
+"And_2" [label = "And_2\nRelation:And"]
+"OS" [label = "OS\nComponent\n[v4.1]"]
+"And_B" [label = "And_B\nRelation:And"]
+"B" [label = "B\nComponent\n[ar]"]
+"Xor_2" [label = "Xor_2\nRelation:Xor"]
+"A" -> "And_1"
+"And_1" -> "Xor_1"
+"Xor_1" -> "And_F"
+"And_F" -> "F"
+"F" -> "And_2"
+"And_2" -> "OS"
+"Xor_1" -> "And_B"
+"And_B" -> "B"
+"B" -> "And_2"
+"And_1" -> "Xor_2"
+"Xor_2" -> "And_F"
+"Xor_2" -> "And_B"
+}

@@ -1,0 +1,102 @@
+<ACDG> 
+<TOP>  T </TOP> 
+<BOTTOM> OS </BOTTOM>  
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_1  </NAME> 
+</NODE>
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_2 </NAME> 
+</NODE> 
+
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_3 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> T </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C1 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C2 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C3 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C4 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE>  
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> OS </NAME> 
+     <VERSION> v4.1 </VERSION> 
+</NODE>
+<EDGE> 
+       <PARENT> T </PARENT>
+       <CHILD> Xor_1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> C  </CHILD>
+</EDGE> 
+
+<EDGE> 
+       <PARENT> C1 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C2 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C3 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C4 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_2 </PARENT>
+       <CHILD> OS </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C </PARENT>
+       <CHILD> And_3 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C1 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C3 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C4 </CHILD>
+</EDGE>
+</ACDG>
+

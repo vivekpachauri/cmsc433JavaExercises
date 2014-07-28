@@ -1,0 +1,93 @@
+<ACDG> 
+<TOP>  A </TOP> 
+<BOTTOM> OS </BOTTOM>  
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_1  </NAME> 
+</NODE>
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_2 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_1 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> A </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> B </NAME> 
+     <VERSION> v4.1 </VERSION> 
+     <VERSION> v4.2 </VERSION> 
+     <VERSION> v5.0 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> D </NAME> 
+     <VERSION> v1.1 </VERSION>
+     <VERSION> v1.2 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> E </NAME> 
+     <VERSION> v2.1 </VERSION> 
+</NODE>  
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> OS </NAME> 
+     <VERSION> v4.1 </VERSION> 
+</NODE>
+<EDGE> 
+       <PARENT> A </PARENT>
+       <CHILD> Xor_1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> B </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> C  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> B </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_2 </PARENT>
+       <CHILD> D </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_2 </PARENT>
+       <CHILD> E </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> D </PARENT>
+       <CHILD> And_1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> E </PARENT>
+       <CHILD> And_1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_1 </PARENT>
+       <CHILD> OS </CHILD>
+</EDGE> 
+<CONSTRAINT>  GEQ(version(B),v5.0) </CONSTRAINT>
+<CONSTRAINT>  LEQ(version(B),v5.0) </CONSTRAINT>
+<CONSTRAINT>  NEQ(version(D),v1.2) </CONSTRAINT>
+<CONSTRAINT>  selected(B) </CONSTRAINT>
+</ACDG>

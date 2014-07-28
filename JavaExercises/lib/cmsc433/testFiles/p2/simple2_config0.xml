@@ -1,0 +1,78 @@
+<ACDG> 
+<TOP>  T </TOP> 
+<BOTTOM> OS </BOTTOM>  
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_1  </NAME> 
+</NODE>
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_2 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_1 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> T </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A </NAME> 
+     <VERSION> v1</VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A1 </NAME> 
+     <VERSION> v1</VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A2 </NAME> 
+     <VERSION> v1</VERSION> 
+</NODE> 
+
+
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> OS </NAME> 
+     <VERSION> v4.1 </VERSION> 
+</NODE>
+<EDGE> 
+       <PARENT> T </PARENT>
+       <CHILD> Xor_1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> A </CHILD>
+</EDGE> 
+
+<EDGE> 
+       <PARENT> A1 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> A2 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+
+<EDGE> 
+       <PARENT> Xor_2 </PARENT>
+       <CHILD> OS </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> A </PARENT>
+       <CHILD> And_1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_1 </PARENT>
+       <CHILD> A1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_1 </PARENT>
+       <CHILD> A2 </CHILD>
+</EDGE>
+</ACDG>
+

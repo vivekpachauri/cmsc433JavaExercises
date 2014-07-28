@@ -1,0 +1,25 @@
+<ACDG>
+  <TOP> TOP </TOP>
+  <NODE>
+    <TYPE> Component </TYPE>
+    <NAME> TOP </NAME>
+    <VERSION> v1 </VERSION>
+  </NODE>
+  <NODE>
+    <TYPE> Relation:And </TYPE>
+    <NAME> A </NAME>
+  </NODE>
+  <NODE>
+    <TYPE> Component </TYPE>
+    <NAME> BTM </NAME>
+    <VERSION> v1 </VERSION>
+  </NODE>
+  <EDGE>
+    <PARENT> TOP </PARENT>
+    <CHILD> A </CHILD>
+  </EDGE>
+  <EDGE>
+    <PARENT> A </PARENT>
+    <CHILD> BTM </CHILD>
+  </EDGE>
+</ACDG>

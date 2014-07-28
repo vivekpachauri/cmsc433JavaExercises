@@ -1,0 +1,14 @@
+<ACDG> 
+<TOP>  TopTest1 </TOP> 
+<BOTTOM> BottomTest1 </BOTTOM>  
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> TopTest1 </NAME> 
+     <VERSION> vt1.1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> BottomTest1 </NAME> 
+     <VERSION> vb1.2 </VERSION> 
+</NODE>
+</ACDG>

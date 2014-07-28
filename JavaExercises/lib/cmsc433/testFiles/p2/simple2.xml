@@ -1,0 +1,202 @@
+<ACDG> 
+<TOP>  T </TOP> 
+<BOTTOM> OS </BOTTOM>  
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_1  </NAME> 
+</NODE>
+<NODE> 
+   <TYPE> Relation:Xor    </TYPE> 
+   <NAME> Xor_2 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_1 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_2 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Relation:And    </TYPE> 
+   <NAME> And_3 </NAME> 
+</NODE> 
+<NODE> 
+   <TYPE> Component </TYPE> 
+   <NAME> T </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A </NAME> 
+     <VERSION> v1</VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A1 </NAME> 
+     <VERSION> v1</VERSION> 
+     <VERSION> v2</VERSION> 
+
+</NODE>
+<NODE> 
+   <TYPE> Component  </TYPE> 
+   <NAME> A2 </NAME> 
+     <VERSION> v1</VERSION> 
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> B </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> B1 </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> B2 </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> B3 </NAME> 
+     <VERSION> v1 </VERSION> 
+</NODE>
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C1 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C2 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C3 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE> 
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> C4 </NAME> 
+     <VERSION> v1 </VERSION>
+</NODE>  
+<NODE> 
+   <TYPE> Component    </TYPE> 
+   <NAME> OS </NAME> 
+     <VERSION> v4.1 </VERSION> 
+</NODE>
+<EDGE> 
+       <PARENT> T </PARENT>
+       <CHILD> Xor_1  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> A </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> B </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_1 </PARENT>
+       <CHILD> C  </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> A1 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> A2 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> B1 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> B2 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> B3 </PARENT>
+       <CHILD> Xor_2 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C1 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C2 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C3 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> C4 </PARENT>
+       <CHILD> Xor_2</CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> Xor_2 </PARENT>
+       <CHILD> OS </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> A </PARENT>
+       <CHILD> And_1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_1 </PARENT>
+       <CHILD> A1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_1 </PARENT>
+       <CHILD> A2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> B </PARENT>
+       <CHILD> And_2 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_2 </PARENT>
+       <CHILD> B1 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_2 </PARENT>
+       <CHILD> B2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_2 </PARENT>
+       <CHILD> B3 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> C </PARENT>
+       <CHILD> And_3 </CHILD>
+</EDGE> 
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C1 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C2 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C3 </CHILD>
+</EDGE>
+<EDGE> 
+       <PARENT> And_3 </PARENT>
+       <CHILD> C4 </CHILD>
+</EDGE>
+<CONSTRAINT>  EQ(version(A1),v1) </CONSTRAINT>
+<CONSTRAINT>  notselected(B3) </CONSTRAINT>
+</ACDG>
